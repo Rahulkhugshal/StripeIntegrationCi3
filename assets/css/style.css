@@ -1,0 +1,89 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+/* Card Container */
+.card-container {
+    perspective: 1000px;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: rotateY(10deg) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Card Footer */
+.card-footer {
+    text-align: center;
+    padding: 10px;
+    background: #f8f8f8;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* Stripe Element Input */
+.input-element {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+/* Error Message */
+#card-errors {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Button Style */
+.btn {
+    background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%);
+}
